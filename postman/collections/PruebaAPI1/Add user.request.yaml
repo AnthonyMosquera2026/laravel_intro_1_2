@@ -1,0 +1,32 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/register
+method: POST
+headers:
+  name: jose
+  email: jose@gmail.com
+  password: jose123
+  c_password: jose123
+scripts:
+  - type: afterResponse
+    code: ""
+    language: text/javascript
+order: 1000
+body:
+  type: formdata
+  content:
+    - type: text
+      key: name
+      value: manuel
+      disabled: false
+    - type: text
+      key: email
+      value: manuel@gmail.com
+      disabled: false
+    - type: text
+      key: password
+      value: manuel123456
+      disabled: false
+    - type: text
+      key: c_password
+      value: manuel123456
+      disabled: false

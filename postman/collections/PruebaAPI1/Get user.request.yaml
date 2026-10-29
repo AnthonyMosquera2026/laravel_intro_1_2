@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/user/2
+method: GET
+examples: .resources/Get user.resources/examples
+order: 2000
