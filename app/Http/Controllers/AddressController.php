@@ -76,5 +76,9 @@ class AddressController extends Controller
             'zipcode' => 'required|string|max:20',
         ]);
     }
+
+    public function index(request $request){
+        return response()->json(Address::all());
+    }
 }
 
